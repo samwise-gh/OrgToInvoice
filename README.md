@@ -51,6 +51,7 @@ This produces two files:
 
     customer-0042.Feb-1-14-2021.tex
     customer-0042.Feb-1-14-2021.log.tex
+
 # Converting to PDF
 
 The invoice and log files are in LaTeX format and will likely need to be converted to pdf or some other document format. On Linux systems the **_texi2pdf_** utility from [texinfo](https://www.gnu.org/software/texinfo/) can be used to generate the pdfs.

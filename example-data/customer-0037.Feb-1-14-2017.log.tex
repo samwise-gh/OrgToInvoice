@@ -7,28 +7,39 @@
 \usepackage{booktabs}
 \pagestyle{empty}
 \linespread{1}
+\usepackage{color, colortbl}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\colorlet{tablecolor1}{darkgray}
 \begin{document}
 \fontfamily{lmss}\selectfont
 \begin{landscape}
 \def \tab {\hspace*{3ex}} % Define \tab to create some horizontal white space
-\hrule height1mm
-{ \LARGE Awesome Engineering, Inc.\hfill Work Log : Feb 1-14, 2017} \\
+{\color{blue!80}\hrule height4mm}
+{ \LARGE Work Log : Awesome Engineering, Inc.\hfill \large \textcolor{blue}{Feb 1-14, 2017}} \\
 \vspace*{2ex} \\
-\begin{tabular}{l@{\hspace{ 2em }}rl}
+\begin{tabu}{l@{\hspace{ 2em }}rl}
 {\large Date} & {\large Work} & {\large Description} \\[5pt]
 \toprule[1.5pt]
+\rowfont{\color{tablecolor1}}
 \small2017-02-01 & 2.95 & Fixed a table problem, product audio issue \\
+\rowfont{\color{tablecolor1}}
 \small2017-02-06 & 1.22 & Tested FPGA firmware on various Mac setups looking for black SOD \\
+\rowfont{\color{tablecolor1}}
 \small2017-02-07 & 7.45 & Looking at failure to be recognized on Mac restart, customer X problem, worked JimBo and Steven testing new firmware \\
+\rowfont{\color{tablecolor1}}
 \small2017-02-08 & 1.92 & Did some prelim analysis of the Mac restart issue \\
+\rowfont{\color{tablecolor1}}
 \small2017-02-09 & 7.55 & FPGA ver issue and Mac restart issue, tested possible fix for restart issues \\
+\rowfont{\color{tablecolor1}}
 \small2017-02-10 & 8.97 & Fixed issue with updater locking, UniqueID tweak \\
+\rowfont{\color{tablecolor1}}
 \small2017-02-14 & 3.12 & Worked with Elon on creating a release candidate and running the torture test \\
 \midrule
 \noalign{\vskip 2mm}
 \multicolumn{1}{l}{\large Hours} & {\large  33.18}\\
 \noalign{\vskip 2mm}
 \bottomrule[1.5pt]
-\end{tabular}
+\end{tabu}
 \end{landscape}
 \end{document}

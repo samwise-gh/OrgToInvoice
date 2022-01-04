@@ -4,38 +4,61 @@
 \usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}
 \usepackage[parfill]{parskip} 
 \usepackage{booktabs}
+\usepackage{color, colortbl}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\colorlet{headercolor}{cyan!21}
+\colorlet{invoicecolor}{blue}
+\colorlet{tablecolor1}{darkgray}
+\colorlet{tablearraycolor}{blue}
+\colorlet{addresscolor}{black!70}
+\colorlet{footergray}{black!80}
+\colorlet{footerblue}{blue}
+\colorlet{totalcolor}{black!20}
+\colorlet{termscolor}{blue!90}
 \pagestyle{empty}
 \linespread{1.2}
 \begin{document}
 \fontfamily{lmss}\selectfont
 \def \tab {\hspace*{3ex}} % Define \tab to create some horizontal white space
-\hrule height1mm
+{\color{blue!80}\hrule height4mm}
 \vspace*{2ex}
-{\LARGE Awesome Engineering, Inc.} {\large \hfill Invoice Number : 0037} \\
-10 Where stuff gets done circle \hfill 15 Mar 2017 \\
-TheCity, CA    94103\\
+{\LARGE Awesome Engineering, Inc.} {\large \hfill Invoice Number : \textcolor{invoicecolor}{0037}} \\
+\textcolor{addresscolor}{10 Where stuff gets done circle} \hfill 03 Jan 2022 \\
+\textcolor{addresscolor}{TheCity, CA    94103} \\
 \vspace*{2ex} \\
 {\LARGE Invoice To:} \\
-\tab ACME Systems, Inc. \\
-\tab 18 Cool Project Street \\
-\tab Utopia, TX    78653
+\tab \textcolor{addresscolor}{ACME Systems, Inc.} \hfill PO : \textcolor{black}{121212} \\
+\tab \textcolor{addresscolor}{18 Cool Project Street} \\
+\tab \textcolor{addresscolor}{Utopia, TX    78653}
 \small
 \flushright
 \vspace*{3ex}
-\begin{tabular}{l@{\hspace{ 14em }}r@{\hspace{2em}}rr}
-{\large Date} & {\large Hours} & {\large Rate} & {\large Amount} \\
+\taburulecolor{tablearraycolor}
+\begin{tabu}{l@{\hspace{ 14em }}r@{\hspace{2em}}rr}
+\textcolor{tablearraycolor}{\large Date} & \textcolor{tablearraycolor}{\large Hours} & \textcolor{tablearraycolor}{\large Rate} & \textcolor{tablearraycolor}{\large Amount} \\
 \toprule[1.5pt]
-2017-02-01 & 2.95   & \$350.00{\tiny /hr} & \$1,032.50 \\
-2017-02-06 & 1.22   &          & \$427.00   \\
-2017-02-07 & 7.45   &          & \$2,607.50 \\
-2017-02-08 & 1.92   &          & \$672.00   \\
-2017-02-09 & 7.55   &          & \$2,642.50 \\
-2017-02-10 & 8.97   &          & \$3,139.50 \\
-2017-02-14 & 3.12   &          & \$1,092.00 \\
+\rowfont{\color{tablecolor1}}
+2017-02-01 & 2.95   & \$103.57{\tiny /hr} & \$305.53   \\
+\rowfont{\color{tablecolor1}}
+2017-02-06 & 1.22   &          & \$126.36   \\
+\rowfont{\color{tablecolor1}}
+2017-02-07 & 7.45   &          & \$771.60   \\
+\rowfont{\color{tablecolor1}}
+2017-02-08 & 1.92   &          & \$198.85   \\
+\rowfont{\color{tablecolor1}}
+2017-02-09 & 7.55   &          & \$781.95   \\
+\rowfont{\color{tablecolor1}}
+2017-02-10 & 8.97   &          & \$929.02   \\
+\rowfont{\color{tablecolor1}}
+2017-02-14 & 3.12   &          & \$323.14   \\
 \midrule
 \noalign{\vskip 2mm}
-\multicolumn{3}{r}{\large Total} & {\large \$11,613.00}\\
+\multicolumn{3}{r}{\large Total} & {\large \$3,436.45}\\
 \noalign{\vskip 2mm}
 \bottomrule[1.5pt]
-\end{tabular}
+\end{tabu}
+\vfill
+\flushleft
+\textcolor{termscolor}{Terms: Net 14} \hfill \textcolor{footerblue}{Thank you for your business:-)} \\
 \end{document}
