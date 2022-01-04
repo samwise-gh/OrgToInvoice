@@ -2,4 +2,5 @@
 
 # Run a report for pay Feb 2017 pay period 1 (1-14)
 
-./timeproc -r 350.00 -i 37 -m 02 -p 1 -t  ../example-data/customer.org -y 2021 -c ../example-data/customer.ini
+../bin/orgtoinv timeproc --PO 314159 --invoice 42 --month 02 --period 1 --year 2017 --time  ./customer.org -v
+

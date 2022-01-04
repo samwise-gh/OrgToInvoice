@@ -1,30 +1,13 @@
 \documentclass[12pt]{report}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}
-\usepackage[parfill]{parskip} 
-\usepackage{booktabs}
-\usepackage{color, colortbl}
-\usepackage[table]{xcolor}
-\usepackage{tabu}
-\colorlet{headercolor}{cyan!21}
-\colorlet{invoicecolor}{blue}
-\colorlet{tablecolor1}{darkgray}
-\colorlet{tablearraycolor}{blue}
-\colorlet{addresscolor}{black!70}
-\colorlet{footergray}{black!80}
-\colorlet{footerblue}{blue}
-\colorlet{totalcolor}{black!20}
-\colorlet{termscolor}{blue!90}
-\pagestyle{empty}
-\linespread{1.2}
+\usepackage{import}
+\import{./}{invoice-color.tex}
 \begin{document}
 \fontfamily{lmss}\selectfont
 \def \tab {\hspace*{3ex}} % Define \tab to create some horizontal white space
-{\color{blue!80}\hrule height4mm}
+{\color{headercolor}\hrule height4mm}
 \vspace*{2ex}
 {\LARGE Awesome Engineering, Inc.} {\large \hfill Invoice Number : \textcolor{invoicecolor}{0042}} \\
-\textcolor{addresscolor}{10 Where stuff gets done circle} \hfill 03 Jan 2022 \\
+\textcolor{addresscolor}{10 Where stuff gets done circle} \hfill 24 Feb 2017 \\
 \textcolor{addresscolor}{TheCity, CA    94103} \\
 \vspace*{2ex} \\
 {\LARGE Invoice To:} \\
@@ -36,25 +19,26 @@
 \vspace*{3ex}
 \taburulecolor{tablearraycolor}
 \begin{tabu}{l@{\hspace{ 14em }}r@{\hspace{2em}}rr}
-\textcolor{tablearraycolor}{\large Date} & \textcolor{tablearraycolor}{\large Hours} & \textcolor{tablearraycolor}{\large Rate} & \textcolor{tablearraycolor}{\large Amount} \\
+\rowfont{\color{tableheadercolor}}
+{\large Date} & {\large Hours} & {\large Rate} & {\large Amount} \\
 \toprule[1.5pt]
 \rowfont{\color{tablecolor1}}
-2017-02-01 & 2.95   & \$203.57{\tiny /hr} & \$600.53   \\
+2017-02-01 & 2.95   & \$167.26{\tiny /hr} & \$493.42   \\
 \rowfont{\color{tablecolor1}}
-2017-02-06 & 1.22   &          & \$248.36   \\
+2017-02-06 & 1.22   &          & \$204.06   \\
 \rowfont{\color{tablecolor1}}
-2017-02-07 & 7.45   &          & \$1,516.60 \\
+2017-02-07 & 7.45   &          & \$1,246.09 \\
 \rowfont{\color{tablecolor1}}
-2017-02-08 & 1.92   &          & \$390.85   \\
+2017-02-08 & 1.92   &          & \$321.14   \\
 \rowfont{\color{tablecolor1}}
-2017-02-09 & 7.55   &          & \$1,536.95 \\
+2017-02-09 & 7.55   &          & \$1,262.81 \\
 \rowfont{\color{tablecolor1}}
-2017-02-10 & 8.97   &          & \$1,826.02 \\
+2017-02-10 & 8.97   &          & \$1,500.32 \\
 \rowfont{\color{tablecolor1}}
-2017-02-14 & 3.12   &          & \$635.14   \\
+2017-02-14 & 3.12   &          & \$521.85   \\
 \midrule
 \noalign{\vskip 2mm}
-\multicolumn{3}{r}{\large Total} & {\large \$6,754.45}\\
+\multicolumn{3}{r}{\large Total} & {\large \$5,549.69}\\
 \noalign{\vskip 2mm}
 \bottomrule[1.5pt]
 \end{tabu}
