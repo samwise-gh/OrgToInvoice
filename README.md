@@ -4,7 +4,7 @@
 [![C++ standard](https://img.shields.io/badge/standard-C%2B%2B20-blue?logo=c%2B%2B&style=flat-square)](https://en.cppreference.com/w/cpp/compiler_support/20)
 [![pipeline status](https://gitlab.com/samwise_i/orgtoinvoice/badges/main/pipeline.svg?style=flat-square)](https://gitlab.com/samwise_i/orgtoinvoice/-/commits/main)
 
-A command line utility to convert [Org](https://orgmode.org) files to customizable [LaTeX](https://www.latex-project.org) invoice and work logs.
+A command line utility to convert [Org](https://orgmode.org) files to customizable [LaTeX](https://www.latex-project.org) invoice and work logs. This project is currently hosted on [GitLab](https://gitlab.com/samwise_i/orgtoinvoice).
 
 All time entries from the **_.org_** file shall have the following format:
 
