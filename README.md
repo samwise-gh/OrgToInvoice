@@ -113,9 +113,9 @@ Here are the supported options:
 
 The following is a typical usage example:
 
-  `└> bin/orgtoinv --PO 314159 --invoice 42 --month 02 --period 1 --year 2017 --time  ../example-data/customer.org -v`
-
   ```
+  └> bin/orgtoinv --PO 314159 --invoice 42 --month 02 --period 1 --year 2017 --time  ../example-data/customer.org -v
+
   2017-02-01     2.95 Fixed a lookup table problem, product issue 232
   2017-02-06     1.22 Tested FPGA firmware on various Cray setups looking for black SOD
   2017-02-07     7.45 Looking at failure on Cray restart, investigated customer AlwaysPaysOnTime problem 
