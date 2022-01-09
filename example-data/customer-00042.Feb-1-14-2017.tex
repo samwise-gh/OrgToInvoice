@@ -1,12 +1,19 @@
 \documentclass[12pt]{report}
-\usepackage{import}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{color, colortbl}
+\usepackage[table]{xcolor}
+\usepackage[parfill]{parskip}
+\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}\usepackage{import}
 \import{./}{invoice-color.tex}
 \begin{document}
 \fontfamily{lmss}\selectfont
 \def \tab {\hspace*{3ex}} % Define \tab to create some horizontal white space
 {\color{headercolor}\hrule height4mm}
 \vspace*{2ex}
-{\LARGE \textcolor{providercolor}{Awesome Engineering, Inc.}} {\large \hfill Invoice Number : \textcolor{invoicecolor}{0042}} \\
+{\LARGE \textcolor{providercolor}{Awesome Engineering, Inc.}} {\large \hfill Invoice Number : \textcolor{invoicecolor}{00042}} \\
 \textcolor{addresscolor}{10 Where stuff gets done circle} \hfill 21 Feb 2017 \\
 \textcolor{addresscolor}{TheCity, CA    94103} \\
 \vspace*{2ex} \\
@@ -23,26 +30,26 @@
 {\large Date} & {\large Hours} & {\large Rate} & {\large Amount} \\
 \toprule[1.5pt]
 \rowfont{\color{tablecolor1}}
-2017-02-01 & 2.95   & \$167.26\textcolor{black}{\tiny /hr} & \$493.42   \\
+2017-02-01 & 2.95   & \$167.26\textcolor{black}{\tiny /hr} & \$493.42    \\
 \rowfont{\color{tablecolor1}}
-2017-02-06 & 1.22   &          & \$204.06   \\
+2017-02-06 & 1.22   &          & \$204.06    \\
 \rowfont{\color{tablecolor1}}
-2017-02-07 & 7.45   &          & \$1,246.09 \\
+2017-02-07 & 7.45   &          & \$1,246.09  \\
 \rowfont{\color{tablecolor1}}
-2017-02-08 & 1.92   &          & \$321.14   \\
+2017-02-08 & 1.92   &          & \$321.14    \\
 \rowfont{\color{tablecolor1}}
-2017-02-09 & 7.55   &          & \$1,262.81 \\
+2017-02-09 & 7.55   &          & \$1,262.81  \\
 \rowfont{\color{tablecolor1}}
-2017-02-10 & 8.97   &          & \$1,500.32 \\
+2017-02-10 & 8.97   &          & \$1,500.32  \\
 \rowfont{\color{tablecolor1}}
-2017-02-14 & 3.12   &          & \$521.85   \\
+2017-02-14 & 3.12   &          & \$521.85    \\
 \midrule
 \noalign{\vskip 2mm}
-\multicolumn{3}{r}{\large Total} & {\large \$5,549.69}\\
+\multicolumn{3}{r}{\large Total} & {\large \$5,549.69} \\
 \noalign{\vskip 2mm}
 \bottomrule[1.5pt]
 \end{tabu}
 \vfill
 \flushleft
-\textcolor{termscolor}{Terms: Net 10} \hfill \textcolor{footerblue}{Thank you for your business:-)} \\
+\textcolor{footerblue}{Thank you for your business:-)} \\
 \end{document}

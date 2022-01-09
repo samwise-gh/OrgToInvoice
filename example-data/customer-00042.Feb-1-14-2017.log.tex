@@ -1,0 +1,43 @@
+\documentclass[10pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{color, colortbl}
+\usepackage[table]{xcolor}
+\usepackage[parfill]{parskip}
+\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}\usepackage{import}
+\import{./}{worklog-color.tex}
+\begin{document}
+\begin{landscape}
+\fontfamily{lmss}\selectfont
+\def \tab {\hspace*{3ex}} % Define \tab to create some horizontal white space
+{\color{MyDarkBlue}\hrule height4mm}
+{ \LARGE Work Log : Awesome Engineering, Inc.\hfill \large \textcolor{MyDarkBlue}{Feb 1-14, 2017}} \\
+\vspace*{2ex} \\
+\taburulecolor{tablearraycolor}
+\begin{tabu}{l@{\hspace{ 2em }}rl}
+\rowfont{\color{tableheadercolor}}
+{\large Date} & {\large Work} & {\large Description} \\
+\toprule[1.5pt]
+\rowfont{\color{tablecolor}}
+\small2017-02-01 & 2.95 & Fixed a table problem, product issue 232 \\
+\rowfont{\color{tablecolor}}
+\small2017-02-06 & 1.22 & Tested FPGA firmware on various Mac setups looking for blue SOD \\
+\rowfont{\color{tablecolor}}
+\small2017-02-07 & 7.45 & Investigated customer AlwaysPaysOnTime problem. Looking at failure to be recognized on Cray restart. \\
+\rowfont{\color{tablecolor}}
+\small2017-02-08 & 1.92 & Worked JimBob and CutAndPasteHero testing new firmware. did some prelim analysis of the Mac restart issue. \\
+\rowfont{\color{tablecolor}}
+\small2017-02-09 & 7.55 & FPGA ver issue and Cray restart issue, tested possible fix for restart issues \\
+\rowfont{\color{tablecolor}}
+\small2017-02-10 & 8.97 & Fixed issue with updater locking, UniqueID tweak \\
+\rowfont{\color{tablecolor}}
+\small2017-02-14 & 3.12 & Worked with Elon on creating a release candidate and running the torture test \\
+\midrule
+\noalign{\vskip 2mm}
+\multicolumn{1}{l}{\large Hours} & {\large  33.18} \\
+\noalign{\vskip 2mm}
+\bottomrule[1.5pt]
+\end{tabu}\end{landscape}\end{document}

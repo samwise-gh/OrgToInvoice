@@ -1,7 +1,0 @@
-2021/12/30=2021/12/XX ACME Systems, Inc. Invoice# 37 ; Estimated data of payment
-    Assets:Accounts Receivable             $11,613.00
-    Income:ACME Systems, Inc.
-
-;2021/12/XX **UNPAID** ACME Systems, Inc. Invoice# 37 ; Date of actual payment
-;    Assets:Checking                        $0.00
-;    Assets:Accounts Receivable

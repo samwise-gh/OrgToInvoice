@@ -4,36 +4,36 @@
   :LOGBOOK:
   CLOCK: [2017-02-14 Tue 13:16]--[2017-02-14 Tue 15:22] =>  2:06
   CLOCK: [2017-02-14 Tue 17:14]--[2017-02-14 Tue 18:15] =>  1:01
-  ` Worked with Elon creating a release candidate and running torture tests
+  ~ Worked with Elon on creating a release candidate and running the torture test
 
   CLOCK: [2017-02-10 Fri 07:30]--[2017-02-10 Fri 16:28] =>  8:58
-  ` Fixed issue with updater locking, UniqueID tweak
+  ~ Fixed issue with updater locking, UniqueID tweak
 
   CLOCK: [2017-02-09 Thu 09:42]--[2017-02-09 Thu 17:15] =>  7:33
-  ` FPGA ver issue and Cray restart issue, tested possible fix for restart issue
+  ~ FPGA ver issue and Cray restart issue, tested possible fix for restart issues
 
   CLOCK: [2017-02-08 Wed 08:02]--[2017-02-08 Wed 09:57] =>  1:55
-  ` Worked JimBob and CutAndPasteHero testing new firmware, did some prelim analysis of the Cray restart issue
+  ~ Worked JimBob and CutAndPasteHero testing new firmware. did some prelim analysis of the Mac restart issue.
 
   CLOCK: [2017-02-07 Tue 12:16]--[2017-02-07 Tue 17:38] =>  5:22
   CLOCK: [2017-02-07 Tue 08:22]--[2017-02-07 Tue 10:27] =>  2:05
-  ` Looking at restart failure on Cray, customer AlwaysPaysOnTime problem 
+  ~ Investigated customer AlwaysPaysOnTime problem. Looking at failure to be recognized on Cray restart.
   CLOCK: [2017-02-06 Mon 10:37]--[2017-02-06 Mon 11:50] =>  1:13
-  ` Tested FPGA firmware on various Cray setups looking for black SOD
+  ~ Tested FPGA firmware on various Mac setups looking for blue SOD
 
   CLOCK: [2017-02-01 Wed 18:19]--[2017-02-01 Wed 19:10] =>  0:51
   CLOCK: [2017-02-01 Wed 09:11]--[2017-02-01 Wed 11:17] =>  2:06
-  ` Fixed a table problem, product issue 232
+  ~ Fixed a table problem, product issue 232
 
   CLOCK: [2017-01-31 Tue 14:38]--[2017-01-31 Tue 17:55] =>  3:17
-  ` Answered some random questions and worked with the team on a issue 217 in ver 1.01
+  ~ Answered some random questions and worked with the team on a issue 217 in ver 1.01
 
   CLOCK: [2017-01-30 Mon 08:42]--[2017-01-30 Mon 12:14] =>  3:32
-  ` Finishing touches and conversation with product manager
+  ~ Finishing touches and conversation product tables
 
   CLOCK: [2017-01-27 Fri 16:10]--[2017-01-27 Fri 19:48] =>  3:38
   CLOCK: [2017-01-27 Fri 09:51]--[2017-01-27 Fri 12:25] =>  2:34
-  ` Continued to reconstruct the product table build code, updated to compile in VS2015, product bugs and Bugzilla updates
+  ~ Continued to reconstruct the product table build code, updated to compile in VS2015, product bugs and Bugzilla updates
 
 
 * Tasks
