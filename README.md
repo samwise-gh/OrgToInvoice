@@ -1,6 +1,6 @@
 # OrgToInvoice
 
-[![GitLab Release](https://img.shields.io/gitlab/v/release/32486008?sort=semver&style=flat-square)](https://gitlab.com/samwise_i/orgtoinvoice/-/releases)
+[![GitLab Release](https://img.shields.io/gitlab/v/release/32740048?sort=semver&style=flat-square)](https://gitlab.com/samwise_i/orgtoinvoice/-/releases)
 [![C++ standard](https://img.shields.io/badge/standard-C%2B%2B20-blue?logo=c%2B%2B&style=flat-square)](https://en.cppreference.com/w/cpp/compiler_support/20)
 [![pipeline status](https://gitlab.com/samwise_i/orgtoinvoice/badges/main/pipeline.svg?style=flat-square)](https://gitlab.com/samwise_i/orgtoinvoice/-/commits/main)
 
@@ -94,7 +94,7 @@ Certain options are required. You MUST provide:
   --config  [input file.cfg] <OR> Not needed if the time and config share the same name e.g. (customer.org, customer.cfg)
   --invoice [invoice number]
   --month   [month]
-  --period  [Pay period] <OR> -b [day] <AND> -e [day]
+  --period  [Pay period] <OR> --begin [day] <AND> --end [day]
   ```
 
 To view all supported options run with `--help` option.
